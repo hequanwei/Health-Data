@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Health_DataApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()

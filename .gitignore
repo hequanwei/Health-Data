@@ -1,0 +1,57 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserdata
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.playground
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Archives & logs
+*.log
+*.xcarchive
+
+# Secrets / local env (never commit)
+.env
+.env.*
+*.pem
+AuthKey_*.p8
+secrets/
+
+# IDE
+.idea/
+*.swp
+*~.nib
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output

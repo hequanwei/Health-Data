@@ -6,14 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1B2C3DB2FBF182000EEC371 /* Health Data WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1B2C3D32FBF182000EEC371 /* Health Data WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B2C3DD2FBF182000EEC371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AF4E35A2FBF181500EEC372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B2C3D22FBF182000EEC371;
+			remoteInfo = "Health Data WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1B2C3DA2FBF182000EEC371 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1B2C3DB2FBF182000EEC371 /* Health Data WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7A7967AD3060EE8B00FCD251 /* Health-Data-WidgetExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Health-Data-WidgetExtension-Info.plist"; sourceTree = "<group>"; };
 		7AF4E3622FBF181500EEC372 /* Health Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D32FBF182000EEC371 /* Health Data WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Health Data WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7AF4E3642FBF181500EEC372 /* Health Data */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Health Data";
+			sourceTree = "<group>";
+		};
+		A1B2C3D12FBF182000EEC371 /* Health Data Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Health Data Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +61,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1B2C3D52FBF182000EEC371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7AF4E3592FBF181500EEC372 = {
 			isa = PBXGroup;
 			children = (
+				7A7967AD3060EE8B00FCD251 /* Health-Data-WidgetExtension-Info.plist */,
 				7AF4E3642FBF181500EEC372 /* Health Data */,
+				A1B2C3D12FBF182000EEC371 /* Health Data Widget */,
 				7AF4E3632FBF181500EEC372 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				7AF4E3622FBF181500EEC372 /* Health Data.app */,
+				A1B2C3D32FBF182000EEC371 /* Health Data WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +100,12 @@
 				7AF4E35E2FBF181500EEC372 /* Sources */,
 				7AF4E35F2FBF181500EEC372 /* Frameworks */,
 				7AF4E3602FBF181500EEC372 /* Resources */,
+				A1B2C3DA2FBF182000EEC371 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1B2C3DC2FBF182000EEC371 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7AF4E3642FBF181500EEC372 /* Health Data */,
@@ -69,6 +116,28 @@
 			productName = "Health Data";
 			productReference = 7AF4E3622FBF181500EEC372 /* Health Data.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A1B2C3D22FBF182000EEC371 /* Health Data WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D92FBF182000EEC371 /* Build configuration list for PBXNativeTarget "Health Data WidgetExtension" */;
+			buildPhases = (
+				A1B2C3D42FBF182000EEC371 /* Sources */,
+				A1B2C3D52FBF182000EEC371 /* Frameworks */,
+				A1B2C3D62FBF182000EEC371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A1B2C3D12FBF182000EEC371 /* Health Data Widget */,
+			);
+			name = "Health Data WidgetExtension";
+			packageProductDependencies = (
+			);
+			productName = "Health Data WidgetExtension";
+			productReference = A1B2C3D32FBF182000EEC371 /* Health Data WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +150,9 @@
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					7AF4E3612FBF181500EEC372 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					A1B2C3D22FBF182000EEC371 = {
 						CreatedOnToolsVersion = 26.5;
 					};
 				};
@@ -100,12 +172,20 @@
 			projectRoot = "";
 			targets = (
 				7AF4E3612FBF181500EEC372 /* Health Data */,
+				A1B2C3D22FBF182000EEC371 /* Health Data WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7AF4E3602FBF181500EEC372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D62FBF182000EEC371 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +202,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1B2C3D42FBF182000EEC371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B2C3DC2FBF182000EEC371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B2C3D22FBF182000EEC371 /* Health Data WidgetExtension */;
+			targetProxy = A1B2C3DD2FBF182000EEC371 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7AF4E36B2FBF181600EEC372 /* Debug */ = {
@@ -251,21 +346,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Health Data/Health Data.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B3WWBLZ74P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Health-Data-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于读取心率、HRV、睡眠、训练、步数、VO2 Max、血氧、能量、站立时间、步长、楼梯速度、环境音量、咖啡因等健康数据并导出为 JSON，供个人健康分析使用";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "请求健康数据访问权限";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.Health-Data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -283,26 +386,92 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Health Data/Health Data.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B3WWBLZ74P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Health-Data-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于读取心率、HRV、睡眠、训练、步数、VO2 Max、血氧、能量、站立时间、步长、楼梯速度、环境音量、咖啡因等健康数据并导出为 JSON，供个人健康分析使用";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "请求健康数据访问权限";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.Health-Data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1B2C3D72FBF182000EEC371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Health Data Widget/Health Data Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3WWBLZ74P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Health-Data-WidgetExtension-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "恢复分";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.Health-Data.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1B2C3D82FBF182000EEC371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Health Data Widget/Health Data Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3WWBLZ74P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Health-Data-WidgetExtension-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "恢复分";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.Health-Data.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +496,15 @@
 			buildConfigurations = (
 				7AF4E36E2FBF181600EEC372 /* Debug */,
 				7AF4E36F2FBF181600EEC372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D92FBF182000EEC371 /* Build configuration list for PBXNativeTarget "Health Data WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D72FBF182000EEC371 /* Debug */,
+				A1B2C3D82FBF182000EEC371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
